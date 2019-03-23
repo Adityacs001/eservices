@@ -1,0 +1,58 @@
+ 
+ @font-face {
+    font-family: 'ge_ss_text_Regular';
+    src: url('../fonts/arabic/ge_ss_text_Regular.eot');
+    src: url('../fonts/arabic/ge_ss_text_Regular.eot#iefix') format('embedded-opentype'),
+         url('../fonts/arabic/ge_ss_text_Regular.woff') format('woff'),
+         url('../fonts/arabic/ge_ss_text_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'ge_ss_text_Regular' !important;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'ge_ss_text_Regular' !important;
+  }
+
+div, span, label, input {
+  font-family: 'ge_ss_text_Regular' !important;
+}
+a, p, input, span, textarea {
+  font-family: 'ge_ss_text_Regular' !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'ge_ss_text_Regular' !important;
+
+}
+ 
+ .logo-section {
+     background-color: #fff !important;
+ }
+ 
+ /* Add a gray background color and some padding to the footer */
+ footer {
+    background-color: #f2f2f2;
+    padding: 0px;
+    border-top: 1px solid inherit;
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* Set width to 100% */
+    min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'ge_ss_text_Regular';
+    src: url('../../assets/fonts/arabic/ge_ss_text_Regular.eot');
+    src: url('../../assets/fonts/arabic/ge_ss_text_Regular.eot#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/arabic/ge_ss_text_Regular.woff') format('woff'),
+         url('../../assets/fonts/arabic/ge_ss_text_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  * {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+    /*font-family: 'ge_ss_text_Regular' !important;*/
+}
+
+html, body {
+    height: 100%;
+    font-family: 'ge_ss_text_Regular', "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  }
+
+div, span, label, input {
+  font-family: 'ge_ss_text_Regular', "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+a, p, input, span, textarea {
+  font-family: 'ge_ss_text_Regular', "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'ge_ss_text_Regular', "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+h2{
+  margin: 20px 0 !important;
+}
+
+/*---------------------------------------------*/
+
+.navbar-inverse {
+    background-color: #6a99ad !important;
+}
+.sidebar {
+background-color: #6a99ad !important
+}
+.navigation > li.active > a, .navigation > li.active > a:hover, .navigation > li.active > a:focus {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: #fff !important;
+}

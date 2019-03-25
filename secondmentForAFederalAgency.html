@@ -37,6 +37,8 @@
 	<!-- /theme JS files -->
 	<!-- Custom Styles -->
 	<link href="assets/css/custom-styles.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="assets/js/secondmentForAFederalAgency.js"></script>
+	
 
 
 </head>
@@ -242,12 +244,10 @@
 
 								<li><a href="dashboard.html"><i class="icon-home4"></i> <span>اللوحة</span></a></li>
 
-								<li class="active"><a href="brfwizard.html"><i class="icon-stack"></i> <span>Request Bonus</span></a></li>
+								<li><a href="exception_from_AD_housing_policy.html"><i class="icon-stack"></i> <span>AD Housing Policy</span></a></li>
 
-								<li><a href="AmendSalariesScale.html"><i class="icon-stack"></i> <span>Ammend Salaries Scale</span></a></li>
-
-								<li><a href="AmendEmployeesalary.html"><i class="icon-stack"></i> <span>Ammend Employee Salary</span></a></li>
-
+								<li class="active"><a href="secondmentForAFederalAgency.html"><i class="icon-stack"></i> <span>Secondment for a federal agency</span></a></li>
+								
 								<!-- /main -->
 
 							</ul>
@@ -302,118 +302,86 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>اختر الموقع: <span class="text-danger">*</span></label>
-											<select name="location" data-placeholder="اختر الموقع"
-												class="select required">
-												<option></option>
-												<optgroup label="North America">
-													<option value="1">United States</option>
-													<option value="2">Canada</option>
-												</optgroup>
-
-												<optgroup label="Latin America">
-													<option value="3">Chile</option>
-													<option value="4">Argentina</option>
-													<option value="5">Colombia</option>
-													<option value="6">Peru</option>
-												</optgroup>
-
-												<optgroup label="Europe">
-													<option value="8">Croatia</option>
-													<option value="9">Hungary</option>
-													<option value="10">Ukraine</option>
-													<option value="11">Greece</option>
-												</optgroup>
-
-												<optgroup label="Middle East &amp; Africa">
-													<option value="21">Egypt</option>
-													<option value="22">Israel</option>
-													<option value="23">Nigeria</option>
-													<option value="24">United Arab Emirates</option>
-												</optgroup>
-
-												<optgroup label="Asia Pacific">
-													<option value="26">Australia</option>
-													<option value="27">China</option>
-													<option value="28">India</option>
-													<option value="29">Singapore</option>
-												</optgroup>
-											</select>
+											<label>Entity Name: <span class="text-danger">*</span></label>
+											<input type="text" name="entityName" class="form-control required">
 										</div>
 									</div>
 
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>أدخل العنوان: <span class="text-danger">*</span></label>
-											<select name="position" data-placeholder="أدخل العنوان"
-												class="select required">
-												<option></option>
-												<optgroup label="Developer Relations">
-													<option value="1">Sales Engineer</option>
-													<option value="2">Ads Solutions Consultant</option>
-													<option value="3">Technical Solutions Consultant</option>
-													<option value="4">Business Intern</option>
-												</optgroup>
+											<label>Employee Name: <span class="text-danger">*</span></label>
+											<input type="text" name="employeeName" class="form-control required" placeholder="John Doe">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Job Name: <span class="text-danger">*</span></label>
+											<input type="text" name="jobName" class="form-control required">
+										</div>
+									</div>
 
-												<optgroup label="Engineering &amp; Design">
-													<option value="5">Interaction Designer</option>
-													<option value="6">Technical Program Manager</option>
-													<option value="7">Software Engineer</option>
-													<option value="8">Information Security Engineer</option>
-												</optgroup>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Employee Number: <span class="text-danger">*</span></label>
+											<input type="number" name="employeeNumber" class="form-control required">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Basic Salary: <span class="text-danger">*</span></label>
+											<div class="input-group">
+												<span class="input-group-addon">$</span>
+												<input type="number" name="basicSalary" class="form-control required" />
+											</div>
+										</div>
+									</div>
 
-												<optgroup label="Marketing &amp; Communications">
-													<option value="13">Media Outreach Manager</option>
-													<option value="14">Research Manager</option>
-													<option value="15">Marketing Intern</option>
-													<option value="16">Business Intern</option>
-												</optgroup>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Total Salary: <span class="text-danger">*</span></label>
+											<div class="input-group">
+												<span class="input-group-addon">$</span>
+												<input type="number" name="totalSalary" class="form-control required" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
 
-												<optgroup label="Sales Operations">
-													<option value="17">Sales Operations Analyst</option>
-													<option value="18">Technology Product Manager</option>
-													<option value="19">Product Expert</option>
-													<option value="20">Sales Insights Analyst</option>
-													<option value="21">Customer Operations Analyst</option>
-												</optgroup>
-											</select>
+							<h6>الخطوة الثانية</h6>
+							<fieldset>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Retirement Contributions: <span class="text-danger">*</span></label>
+											<div class="input-group">
+												<span class="input-group-addon">$</span>
+												<input type="number" name="retirementContributions" class="form-control required" />
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Request of the borrowing entity:<span class="text-danger">*</span></label>
+											<input type="file" name="borrowingEntity" class="file-styled required">
 										</div>
 									</div>
 								</div>
 
 								<div class="row">
 									<div class="col-md-6">
-										<div class="form-group">
-											<label>اسم مقدم الطلب: <span class="text-danger">*</span></label>
-											<input type="text" name="name" class="form-control required"
-												placeholder="John Doe">
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>البريد الالكتروني: <span class="text-danger">*</span></label>
-											<input type="email" name="email" class="form-control required"
-												placeholder="your@email.com">
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>رقم التواصل #:</label>
-											<input type="text" name="tel" class="form-control"
-												placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999">
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<label>تاريخ الميلاد:</label>
+										<label>Period of Secondment:<span class="text-danger">*</span></label>
 										<div class="row">
 											<div class="col-md-4">
 												<div class="form-group">
-													<select name="birth-month" data-placeholder="الشهر" class="select">
+													<select name="birth-month" data-placeholder="الشهر" class="select required">
 														<option></option>
 														<option value="1">January</option>
 														<option value="2">February</option>
@@ -430,10 +398,9 @@
 													</select>
 												</div>
 											</div>
-
 											<div class="col-md-4">
 												<div class="form-group">
-													<select name="birth-day" data-placeholder="اليوم" class="select">
+													<select name="birth-day" data-placeholder="اليوم" class="select required">
 														<option></option>
 														<option value="1">1</option>
 														<option value="2">2</option>
@@ -449,10 +416,65 @@
 													</select>
 												</div>
 											</div>
-
 											<div class="col-md-4">
 												<div class="form-group">
-													<select name="birth-year" data-placeholder="السنة" class="select">
+													<select name="birth-year" data-placeholder="السنة" class="select required">
+														<option></option>
+														<option value="1">1980</option>
+														<option value="2">1981</option>
+														<option value="3">1982</option>
+														<option value="4">1983</option>
+														<option value="5">1984</option>
+														<option value="6">1985</option>
+														<option value="7">1986</option>
+														<option value="8">1987</option>
+														<option value="9">1988</option>
+														<option value="10">1989</option>
+														<option value="11">1990</option>
+													</select>
+												</div>
+											</div>
+										
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-month" data-placeholder="" class="select required">
+														<option></option>
+														<option value="1">January</option>
+														<option value="2">February</option>
+														<option value="3">March</option>
+														<option value="4">April</option>
+														<option value="5">May</option>
+														<option value="6">June</option>
+														<option value="7">July</option>
+														<option value="8">August</option>
+														<option value="9">September</option>
+														<option value="10">October</option>
+														<option value="11">November</option>
+														<option value="12">December</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-day" data-placeholder="" class="select required">
+														<option></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="...">...</option>
+														<option value="31">31</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-year" data-placeholder="" class="select required">
 														<option></option>
 														<option value="1">1980</option>
 														<option value="2">1981</option>
@@ -470,118 +492,42 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</fieldset>
-
-							<h6>الخطوة الثانية</h6>
-							<fieldset>
-								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>شعار الجهة: <span class="text-danger">*</span></label>
-											<input type="text" name="university" placeholder="شعار الجهة"
-												class="form-control required">
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>سلم الرواتب المعتمد:</label>
-											<select name="سلم الرواتب المعتمد"
-												data-placeholder="سلم الرواتب النعتمد...." class="select">
-												<option></option>
-												<option value="1">United States</option>
-												<option value="2">France</option>
-												<option value="3">Germany</option>
-												<option value="4">Spain</option>
-											</select>
+											<label class="display-block">Request by the competent entity:<span class="text-danger">*</span></label>
+											<input type="file" name="borrowingEntity" class="file-styled required">
 										</div>
 									</div>
 								</div>
-
+								
 								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>اسماء المشمولين <span class="text-danger">*</span></label>
-											<input type="text" name="degree-level" placeholder="أسماء المشمولين"
-												class="form-control required">
-										</div>
-
-										<div class="form-group">
-											<label>عدد الموظفين:</label>
-											<input type="text" name="specialization" placeholder="عدد الموظفين"
-												class="form-control">
-										</div>
-									</div>
+									
 
 									<div class="col-md-6">
-										<div class="row">
-											<div class="col-md-6">
-												<label>من</label>
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-from-month" data-placeholder="Month"
-																class="select">
-																<option></option>
-																<option value="January">January</option>
-																<option value="...">...</option>
-																<option value="December">December</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-from-year" data-placeholder="Year"
-																class="select">
-																<option></option>
-																<option value="1995">1995</option>
-																<option value="...">...</option>
-																<option value="1980">1980</option>
-															</select>
-														</div>
-													</div>
-												</div>
+										<div class="form-group">
+											<label>the entity which responsible for salary: <span class="text-danger">*</span></label>
+											<div class="radio">
+												<label>
+													<input type="radio" checked="true" name="availability" class="styled">
+													Government
+												</label>
 											</div>
-
-											<div class="col-md-6">
-												<label>الى:</label>
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-to-month" data-placeholder="Month"
-																class="select">
-																<option></option>
-																<option value="January">January</option>
-																<option value="...">...</option>
-																<option value="December">December</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-to-year" data-placeholder="Year"
-																class="select">
-																<option></option>
-																<option value="1995">1995</option>
-																<option value="...">...</option>
-																<option value="1980">1980</option>
-															</select>
-														</div>
-													</div>
-												</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="availability" class="styled">
+													Competent
+												</label>
 											</div>
 										</div>
-
+									</div>
+									<div class="col-md-6">
 										<div class="form-group">
-											<label>لغة التعليم:</label>
-											<input type="text" name="education-language" placeholder="انكليزي , ألماني"
-												class="form-control">
+											<label class="display-block">Job Description:<span class="text-danger">*</span></label>
+											<input type="file" name="jobDescription" class="file-styled required">
 										</div>
 									</div>
 								</div>
+								
 							</fieldset>
 
 							<h6>الخطوة الثالثة</h6>
@@ -589,93 +535,58 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>اسم الجهة: <span class="text-danger">*</span></label>
-											<input type="text" name="experience-company" placeholder="اسم الجهة"
-												class="form-control required">
-										</div>
-
-										<div class="form-group">
-											<label>الموقع: <span class="text-danger">*</span></label>
-											<input type="text" name="experience-position" placeholder="الموقع"
-												class="form-control required">
-										</div>
-
-										<div class="row">
-											<div class="col-md-6">
-												<label>من:</label>
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-from-month" data-placeholder="Month"
-																class="select">
-																<option></option>
-																<option value="January">January</option>
-																<option value="...">...</option>
-																<option value="December">December</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-from-year" data-placeholder="Year"
-																class="select">
-																<option></option>
-																<option value="1995">1995</option>
-																<option value="...">...</option>
-																<option value="1980">1980</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-md-6">
-												<label>الى:</label>
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-to-month" data-placeholder="Month"
-																class="select">
-																<option></option>
-																<option value="January">January</option>
-																<option value="...">...</option>
-																<option value="December">December</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="col-md-6">
-														<div class="form-group">
-															<select name="education-to-year" data-placeholder="Year"
-																class="select">
-																<option></option>
-																<option value="1995">1995</option>
-																<option value="...">...</option>
-																<option value="1980">1980</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
+											<label class="display-block">Approval of Employee:<span class="text-danger">*</span></label>
+											<input type="file" name="approvalOfEmployee" id="approvalOfEmployee" class="file-styled required" accept="application/pdf">
+											<span class="help-block">Accepted formats: pdf. Max file size 2Mb</span>
+											<span class="text-danger" id="approvalOfEmployeeErr" style="display:none;">Please select only pdf file.</span>
 										</div>
 									</div>
 
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>الوصف الوظيفي:</label>
-											<textarea name="experience-description" rows="4" cols="4"
-												placeholder="الوصف الوظيفي" class="form-control"></textarea>
-										</div>
-
-										<div class="form-group">
-											<label class="display-block">الانجازات:</label>
-											<input name="recommendations" type="file" class="file-styled">
-											<span class="help-block">Accepted formats: pdf, doc. Max file size
-												2Mb</span>
+											<label class="display-block">Copy of HR Committee:</label>
+											<input type="file" name="copyOfHRCommittee" id="copyOfHRCommittee" class="file-styled required" accept="application/pdf">
+											<span class="help-block">Accepted formats: pdf. Max file size 2Mb</span>
+											<span class="text-danger" id="copyOfHRCommitteeErr" style="display:none;">Please select only pdf file.</span>
 										</div>
 									</div>
 								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Copy of Last Year Efficiency Report:<span class="text-danger">*</span></label>
+											<input type="file" name="copyOfLastYearEfficiencyReport" id="copyOfLastYearEfficiencyReport" class="file-styled required" accept="application/pdf">
+											<span class="help-block">Accepted formats: pdf, doc. Max file size 2Mb</span>
+											<span class="text-danger" id="copyOfLastYearEfficiencyReportErr" style="display:none;">Please select only pdf file.</span>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Emarites Id:<span class="text-danger">*</span></label>
+											<input type="file" name="EmaritesId" class="file-styled required">
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Passport Copy:<span class="text-danger">*</span></label>
+											<input type="file" name="passportCopy" class="file-styled required">
+											
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Family Book:<span class="text-danger">*</span></label>
+											<input type="file" name="familyBook" class="file-styled required">
+										</div>
+									</div>
+								</div>
+								
 							</fieldset>
 
 							<h6>الخطوة الرابعة</h6>
@@ -683,69 +594,20 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
-											<label class="display-block">العقود الوظيفية:</label>
-											<input type="file" name="resume" class="file-styled">
-											<span class="help-block">Accepted formats: pdf, doc. Max file size
-												2Mb</span>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>أسباب صرف المكافآت? <span class="text-danger">*</span></label>
-											<select name="source" data-placeholder="اختر أحد الخيارات"
-												class="select-simple required">
+											<label>HRA Employee study maker: <span class="text-danger">*</span></label>
+											<select name="HRAEmployeeStudyMaker" class="select required">
 												<option></option>
-												<option value="monster">Monster.com</option>
-												<option value="linkedin">LinkedIn</option>
-												<option value="google">Google</option>
-												<option value="adwords">Google AdWords</option>
-												<option value="other">Other source</option>
+												<option value="1">Person</option>
+												<option value="2">Group</option>
 											</select>
 										</div>
 									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>مهلة القبول: <span class="text-danger">*</span></label>
-											<div class="radio">
-												<label>
-													<input type="radio" name="availability" class="styled required">
-													مباشرة
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="availability" class="styled">
-													1 - 2 أسبابيع
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="availability" class="styled">
-													3 - 4 أسابيع
-												</label>
-											</div>
-
-											<div class="radio">
-												<label>
-													<input type="radio" name="availability" class="styled">
-													أكثر من شهر
-												</label>
-											</div>
-										</div>
-									</div>
 
 									<div class="col-md-6">
 										<div class="form-group">
-											<label>معلومات إضافية:</label>
-											<textarea name="additional-info" rows="5" cols="5"
-												placeholder="If you want to add any info, do it here."
-												class="form-control"></textarea>
+											<label class="display-block">HRA study:<span class="text-danger">*</span></label>
+											<input type="file" name="HRAStudy" class="file-styled required">
+											<span class="help-block">Accepted formats: pdf, doc. Max file size 2Mb</span>
 										</div>
 									</div>
 								</div>

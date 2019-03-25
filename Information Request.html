@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>طلب مكافآت</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/forms/wizards/steps.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/extensions/cookie.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/wizard_steps.js"></script>
+	<!-- /theme JS files -->
+	<!-- Custom Styles -->
+	<link href="assets/css/custom-styles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="navbar-top">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="dashboard.html" style="display:none;"><img src="assets/images/logo_light.png"
+					alt=""></a>
+			<a class="navbar-brand" href="dashboard.html">
+				<h2 style="margin: 0 !important; padding: 0; line-height: 21px;">هيئة الموارد البشرية</h2>
+			</a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown language-switch">
+					<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<img src="assets/images/flags/ae.png" class="position-left" alt="">
+						العربية
+						<span class="caret"></span>
+					</a>
+
+					<ul class="dropdown-menu">
+						<li><a class="deutsch"><img src="assets/images/flags/ae.png" alt=""> العربية</a></li>
+						<li><a class="ukrainian"><img src="assets/images/flags/us.png" alt=""> English</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<i class="icon-bubbles4"></i>
+						<span class="visible-xs-inline-block position-right">الرسائل</span>
+						<span class="badge bg-warning-400">2</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-content width-350">
+						<div class="dropdown-content-heading">
+							الرسائل
+							<ul class="icons-list">
+								<li><a href="#"><i class="icon-compose"></i></a></li>
+							</ul>
+						</div>
+
+						<ul class="media-list dropdown-content-body">
+							<li class="media">
+								<div class="media-left">
+									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">5</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">James Alexander</span>
+										<span class="media-annotation pull-right">04:58</span>
+									</a>
+
+									<span class="text-muted">who knows, maybe that would be the best thing for
+										me...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left">
+									<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+									<span class="badge bg-danger-400 media-badge">4</span>
+								</div>
+
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Margo Baker</span>
+										<span class="media-annotation pull-right">12:16</span>
+									</a>
+
+									<span class="text-muted">That was something he was unable to do because...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg"
+										class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Jeremy Victorino</span>
+										<span class="media-annotation pull-right">22:48</span>
+									</a>
+
+									<span class="text-muted">But that would be extremely strained and
+										suspicious...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg"
+										class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Beatrix Diaz</span>
+										<span class="media-annotation pull-right">Tue</span>
+									</a>
+
+									<span class="text-muted">What a strenuous career it is that I've chosen...</span>
+								</div>
+							</li>
+
+							<li class="media">
+								<div class="media-left"><img src="assets/images/placeholder.jpg"
+										class="img-circle img-sm" alt=""></div>
+								<div class="media-body">
+									<a href="#" class="media-heading">
+										<span class="text-semibold">Richard Vango</span>
+										<span class="media-annotation pull-right">Mon</span>
+									</a>
+
+									<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+								</div>
+							</li>
+						</ul>
+
+						<div class="dropdown-content-footer">
+							<a href="#" data-popup="tooltip" title="" data-original-title="All messages"><i
+									class="icon-menu display-block"></i></a>
+						</div>
+					</div>
+				</li>
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<img src="assets/images/placeholder.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> حسابي</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> الإعدادات</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> تسجيل الخروج</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main sidebar-fixed">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="assets/images/image.png"
+										class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Victoria Baker</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-pin text-size-small"></i> &nbsp;Santa Ana, CA
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header">
+									<span>الرئيسية</span> 
+									<i class="icon-menu" title="Main pages"></i>
+								</li>
+								<li><a href="dashboard.html">
+									<i class="icon-home4"></i> <span>اللوحة</span></a>
+								</li>
+
+								<li class="active"><a href="Information Request.html"><i class="icon-stack"></i> <span>Information Request</span></a></li>
+
+								<li><a href="SCI.html"><i class="icon-stack"></i> <span>SCI</span></a></li>
+
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Page header -->
+				<div class="page-header page-header-default">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">طلب مكافآت
+									جديد</span></h4>
+						</div>
+
+						<div class="heading-elements">
+							<a href="#" class="btn btn-labeled btn-labeled-right bg-blue heading-btn">Save <b><i
+										class="icon-menu7"></i></b></a>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Wizard with validation -->
+					<div class="panel panel-white">
+						<div class="panel-heading">
+							<h6 class="panel-title">Information Request</h6>
+							<div class="heading-elements">
+								<ul class="icons-list">
+									<li><a data-action="collapse"></a></li>
+									<li><a data-action="reload"></a></li>
+									<li><a data-action="close"></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<form class="steps-validation" action="#">
+							<h6>الخطوة الأولى</h6>
+							<fieldset>
+							
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Requestor Name: <span class="text-danger">*</span></label>
+										<input type="text" name="name" class="form-control required"
+											placeholder="" maxlength="50">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Contact Number: <span class="text-danger">*</span></label>
+										<input type="text" name="name" class="form-control required"
+											placeholder="" maxlength="50">
+									</div>
+								</div>
+							</div>
+							
+								<div class="row">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>What are the information required:</label>
+											<textarea name="additional-info" rows="5" cols="5"
+												placeholder="" class="form-control"></textarea>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Who are the assigned entities <span class="text-danger">*</span></label>
+											<select name="source" data-placeholder=""
+												class="select-simple required">
+												<option></option>
+												<option value="monster">Monster.com</option>
+												<option value="linkedin">LinkedIn</option>
+												<option value="google">Google</option>
+												<option value="adwords">Google AdWords</option>
+												<option value="other">Other source</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							
+							</fieldset>
+
+							<h6>الخطوة الثانية</h6>
+							<fieldset>
+								<div class="row">
+								<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Attached files</label>
+											<input name="recommendations" type="file" class="file-styled">
+											<span class="help-block">Accepted formats: Image only (jpeg,png-…) Max file size 2Mb</span>
+										</div>
+									</div>
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Type of Request <span class="text-danger">*</span></label>
+											<select name="source" data-placeholder=""
+												class="select-simple required">
+												<option></option>
+												<option value="monster">Monster.com</option>
+												<option value="linkedin">LinkedIn</option>
+												<option value="google">Google</option>
+												<option value="adwords">Google AdWords</option>
+												<option value="other">Other source</option>
+											</select>
+										</div>
+									</div>
+							
+							</div>
+
+
+
+								<div class="row">
+									<div class="col-md-6">
+										<label>Last time to reply : <span class="text-danger">*</span></label>
+										<div class="row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-month" data-placeholder="الشهر" class="select">
+														<option></option>
+														<option value="1">January</option>
+														<option value="2">February</option>
+														<option value="3">March</option>
+														<option value="4">April</option>
+														<option value="5">May</option>
+														<option value="6">June</option>
+														<option value="7">July</option>
+														<option value="8">August</option>
+														<option value="9">September</option>
+														<option value="10">October</option>
+														<option value="11">November</option>
+														<option value="12">December</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-day" data-placeholder="اليوم" class="select">
+														<option></option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="...">...</option>
+														<option value="31">31</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="col-md-4">
+												<div class="form-group">
+													<select name="birth-year" data-placeholder="السنة" class="select">
+														<option></option>
+														<option value="1">1980</option>
+														<option value="2">1981</option>
+														<option value="3">1982</option>
+														<option value="4">1983</option>
+														<option value="5">1984</option>
+														<option value="6">1985</option>
+														<option value="7">1986</option>
+														<option value="8">1987</option>
+														<option value="9">1988</option>
+														<option value="10">1989</option>
+														<option value="11">1990</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>The required statements:</label>
+											<textarea name="additional-info" rows="5" cols="5"
+												placeholder="" class="form-control"></textarea>
+										</div>
+									</div>
+									
+
+								</div>
+								
+								
+									<div class="row">
+											<div class="col-md-6">
+										<div class="form-group">
+											<label class="display-block">Attached files:</label>
+											<input type="file" name="resume" class="file-styled">
+											<span class="help-block">Accepted formats: pdf, doc. Max file size
+												2Mb</span>
+										</div>
+									</div>
+								
+									</div>
+								
+							</fieldset>
+
+
+
+								
+							
+
+						</form>
+					</div>
+					<!-- /wizard with validation -->
+
+
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2019. <a href="#">هيئة الموارد البشرية</a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+
+</html>
